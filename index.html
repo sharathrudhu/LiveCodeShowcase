@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editors</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.61.0/codemirror.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.61.0/codemirror.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="htmleditor">
+            <div class="codebutton-group">
+                <button class="tab-button" onclick="showTab('html')">HTML</button>
+                <button class="copy-button" onclick="showTab('copy')">Copy</button>
+            </div>
+            <textarea id="html-editor">
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Document</title>
+                </head>
+                <body>
+                    this is a test for code mirror code block
+                </body>
+                </html></textarea>
+        </div>
+        <br>
+        <div class="csseditor">
+            <div class="codebutton-group">
+                <button class="tab-button" onclick="showTab('css')">CSS</button>
+                <button class="copy-button" onclick="showTab('copy')">Copy</button>
+            </div>
+            <textarea id="css-editor">
+                body {
+                    height: 100vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }</textarea>
+        </div>
+        <br>
+        <div class="jseditor">
+            <div class="codebutton-group">
+                <button class="tab-button" onclick="showTab('js')">JavaScript</button>
+                <button class="copy-button" onclick="showTab('copy')">Copy</button>
+            </div>
+            <textarea id="js-editor">
+                console.log("this is a test")</textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

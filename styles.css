@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.codebutton-group{
+    background-color: rgb(153, 153, 153);
+    display: flex;
+    justify-content: space-between;
+}
+
+.codebutton-group button{
+    color: rgb(240, 240, 240);
+}
+
+.CodeMirror {
+    border: 1px solid #ddd;
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    font-size: 11px;
+    height: 25px;
+    margin-right: 5px;
+    padding: 2px 4px;
+    cursor: pointer;
+}
+
+.copy-button{
+    margin-left: auto;
+    margin-right: 10px;
+    padding-right: 0;
+    background: none;
+    border: none;
+}
+
+.editor-container {
+    border: 1px solid #ddd;
+}
